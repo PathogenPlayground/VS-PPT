@@ -9,7 +9,9 @@
         <PreviewImage>fix-mixed-tabs-screenshot.png</PreviewImage>
     </Metadata>
     <Installation>
-        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0,17.0]" />
+      <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,18.0)">
+        <ProductArchitecture>amd64</ProductArchitecture>
+      </InstallationTarget>
     </Installation>
     <Dependencies>
         <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
@@ -18,7 +20,7 @@
         <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
     </Assets>
     <Prerequisites>
-        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.1.28811.260,17.0)" DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.1.28811.260,)" DisplayName="Visual Studio core editor" />
     </Prerequisites>
 </PackageManifest>
 
